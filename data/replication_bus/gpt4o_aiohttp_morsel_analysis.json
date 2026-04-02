@@ -1,0 +1,38 @@
+{
+  "token_count": 190,
+  "word_count": 155,
+  "baseline_confidence": 66.9,
+  "admissions": 0,
+  "pivots": 0,
+  "hedges": 0,
+  "total_signal": 0,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": null,
+  "hedge_avg_conf": null,
+  "response_text_preview": "The code provided does not contain any direct handling of cookies or Morsel attributes, which are typically associated with the `http.cookies` module in Python. The code primarily deals with authentication mechanisms like Basic and Digest authentication for HTTP requests.\n\nThe bug mentioned in the c",
+  "finding_id": "aiohttp_morsel",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "gpt4o",
+  "elapsed_s": 2.6,
+  "usage": {
+    "prompt_tokens": 2486,
+    "completion_tokens": 190,
+    "total_tokens": 2676,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [],
+  "hedge_token_details": []
+}

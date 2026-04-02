@@ -1,0 +1,44 @@
+{
+  "token_count": 745,
+  "word_count": 558,
+  "baseline_confidence": 96.4,
+  "admissions": 0,
+  "pivots": 1,
+  "hedges": 0,
+  "total_signal": 1,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": 100.0,
+  "hedge_avg_conf": null,
+  "response_text_preview": " After reviewing the provided code and the specific finding about Flask's `jsonify()` function requiring an active application context, I must point out that the code snippet provided does not contain any reference to Flask or the `jsonify()` function. The code is from the `requests` library, specif",
+  "finding_id": "flask_jsonify",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "grok3",
+  "elapsed_s": 9.9,
+  "usage": {
+    "prompt_tokens": 2466,
+    "completion_tokens": 745,
+    "total_tokens": 3211,
+    "prompt_tokens_details": {
+      "text_tokens": 2466,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 185685000
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [
+    "however ->  However @ 100.0%"
+  ],
+  "hedge_token_details": []
+}

@@ -1,0 +1,852 @@
+[
+  {
+    "token_count": 683,
+    "word_count": 419,
+    "baseline_confidence": 97.9,
+    "admissions": 1,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 1,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": 99.7,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": " I can construct a specific input that triggers the bug described in the code review finding. The issue occurs in the `_basic_auth_str()` function when a username or password contains characters outside the Latin-1 range (code points > 255), causing a `UnicodeEncodeError` during the `encode(\"latin1\"",
+    "finding_id": "latin1_crash",
+    "finding_type": "REAL",
+    "finding_bug": "I",
+    "model": "grok3",
+    "elapsed_s": 9.8,
+    "usage": {
+      "prompt_tokens": 2484,
+      "completion_tokens": 683,
+      "total_tokens": 3167,
+      "prompt_tokens_details": {
+        "text_tokens": 2484,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 176925000
+    },
+    "admit_token_details": [
+      "no issue ->  no @ 99.7%"
+    ],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 1485,
+    "word_count": 864,
+    "baseline_confidence": 96.5,
+    "admissions": 0,
+    "pivots": 2,
+    "hedges": 0,
+    "total_signal": 2,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 96.6,
+    "hedge_avg_conf": null,
+    "response_text_preview": " Let's analyze the code and construct a specific input to trigger the bug described in the code review finding. The issue is in the `handle_401()` method of the `HTTPDigestAuth` class, where `r.request.body.seek(self._thread_local.pos)` is called without checking if `r.request.body` is `None`. This ",
+    "finding_id": "body_seek_null",
+    "finding_type": "REAL",
+    "finding_bug": "B",
+    "model": "grok3",
+    "elapsed_s": 18.1,
+    "usage": {
+      "prompt_tokens": 2480,
+      "completion_tokens": 1485,
+      "total_tokens": 3965,
+      "prompt_tokens_details": {
+        "text_tokens": 2480,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 297105000
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however ->  However @ 93.2%",
+      "however ->  However @ 99.9%"
+    ],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 902,
+    "word_count": 627,
+    "baseline_confidence": 96.9,
+    "admissions": 1,
+    "pivots": 1,
+    "hedges": 0,
+    "total_signal": 2,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": 100.0,
+    "pivot_avg_conf": 69.6,
+    "hedge_avg_conf": null,
+    "response_text_preview": " Let's analyze the code review finding and construct a specific input to trigger the described issue.\n\n### Code Review Finding\nThe finding states that in the `_basic_auth_str()` function (lines 36-40), the deprecation warning message includes the actual username value via the `{username!r}` formatti",
+    "finding_id": "username_leaked",
+    "finding_type": "REAL",
+    "finding_bug": "G",
+    "model": "grok3",
+    "elapsed_s": 10.2,
+    "usage": {
+      "prompt_tokens": 2474,
+      "completion_tokens": 902,
+      "total_tokens": 3376,
+      "prompt_tokens_details": {
+        "text_tokens": 2474,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 209475000
+    },
+    "admit_token_details": [
+      "no crash -> No @ 100.0%"
+    ],
+    "pivot_token_details": [
+      "while this ->  While @ 69.6%"
+    ],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 1161,
+    "word_count": 626,
+    "baseline_confidence": 96.4,
+    "admissions": 0,
+    "pivots": 1,
+    "hedges": 0,
+    "total_signal": 1,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 100.0,
+    "hedge_avg_conf": null,
+    "response_text_preview": " Let's analyze the code and construct a specific input that triggers the bug described in the code review finding. The issue is in the `build_digest_header()` method of the `HTTPDigestAuth` class, where it directly accesses `self._thread_local.chal['realm']` and `self._thread_local.chal['nonce']` wi",
+    "finding_id": "keyerror_realm",
+    "finding_type": "REAL",
+    "finding_bug": "D",
+    "model": "grok3",
+    "elapsed_s": 15.2,
+    "usage": {
+      "prompt_tokens": 2476,
+      "completion_tokens": 1161,
+      "total_tokens": 3637,
+      "prompt_tokens_details": {
+        "text_tokens": 2476,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 248385000
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however ->  However @ 100.0%"
+    ],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 1264,
+    "word_count": 737,
+    "baseline_confidence": 96.9,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": " Let's analyze the code and construct a specific input to trigger the bug described in the code review finding. The issue is in the `HTTPDigestAuth` class, specifically in the `build_digest_header()` method, where an unsupported algorithm results in `None` being returned, and this `None` value is us",
+    "finding_id": "digest_returns_none",
+    "finding_type": "REAL",
+    "finding_bug": "A",
+    "model": "grok3",
+    "elapsed_s": 134.7,
+    "usage": {
+      "prompt_tokens": 2466,
+      "completion_tokens": 1264,
+      "total_tokens": 3730,
+      "prompt_tokens_details": {
+        "text_tokens": 2466,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 263535000
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 1223,
+    "word_count": 785,
+    "baseline_confidence": 96.9,
+    "admissions": 0,
+    "pivots": 3,
+    "hedges": 3,
+    "total_signal": 6,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 100.0,
+    "hedge_avg_conf": 79.0,
+    "response_text_preview": " Let's analyze the code review finding regarding the potential `ValueError` from `hashlib.md5()` and `hashlib.sha256()` calls in the `build_digest_header()` method of the `HTTPDigestAuth` class.\n\n### Code Review Finding\nThe finding states that calls to `hashlib.md5()` and `hashlib.sha256()` (and oth",
+    "finding_id": "hashlib_exceptions",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "grok3",
+    "elapsed_s": 16.3,
+    "usage": {
+      "prompt_tokens": 2465,
+      "completion_tokens": 1223,
+      "total_tokens": 3688,
+      "prompt_tokens_details": {
+        "text_tokens": 2465,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 257355000
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however ->  However @ 99.9%",
+      "however ->  However @ 100.0%",
+      "however ->  However @ 100.0%"
+    ],
+    "hedge_token_details": [
+      "depends on ->  depends @ 100.0%",
+      "depends on ->  depends @ 100.0%",
+      "depends on ->  depends @ 37.1%"
+    ]
+  },
+  {
+    "token_count": 1225,
+    "word_count": 757,
+    "baseline_confidence": 95.9,
+    "admissions": 0,
+    "pivots": 3,
+    "hedges": 2,
+    "total_signal": 5,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 86.9,
+    "hedge_avg_conf": 100.0,
+    "response_text_preview": " Let's analyze the bug described in the code review finding and attempt to construct a specific input or scenario that triggers the issue.\n\n### Bug Description\nThe finding states that `self._thread_local.nonce_count` is incremented without bounds in the `HTTPDigestAuth` class. After billions of requ",
+    "finding_id": "nonce_overflow",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "grok3",
+    "elapsed_s": 14.7,
+    "usage": {
+      "prompt_tokens": 2466,
+      "completion_tokens": 1225,
+      "total_tokens": 3691,
+      "prompt_tokens_details": {
+        "text_tokens": 2466,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 257685000
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however -> However @ 60.8%",
+      "however ->  However @ 100.0%",
+      "instead ->  Instead @ 100.0%"
+    ],
+    "hedge_token_details": [
+      "theoretically ->  theoretically @ 100.0%",
+      "could cause ->  could @ 100.0%"
+    ]
+  },
+  {
+    "token_count": 745,
+    "word_count": 558,
+    "baseline_confidence": 96.4,
+    "admissions": 0,
+    "pivots": 1,
+    "hedges": 0,
+    "total_signal": 1,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 100.0,
+    "hedge_avg_conf": null,
+    "response_text_preview": " After reviewing the provided code and the specific finding about Flask's `jsonify()` function requiring an active application context, I must point out that the code snippet provided does not contain any reference to Flask or the `jsonify()` function. The code is from the `requests` library, specif",
+    "finding_id": "flask_jsonify",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "grok3",
+    "elapsed_s": 9.9,
+    "usage": {
+      "prompt_tokens": 2466,
+      "completion_tokens": 745,
+      "total_tokens": 3211,
+      "prompt_tokens_details": {
+        "text_tokens": 2466,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 185685000
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however ->  However @ 100.0%"
+    ],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 392,
+    "word_count": 301,
+    "baseline_confidence": 96.7,
+    "admissions": 0,
+    "pivots": 1,
+    "hedges": 1,
+    "total_signal": 2,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 100.0,
+    "hedge_avg_conf": 100.0,
+    "response_text_preview": " After reviewing the provided code and the bug description, I must state that I cannot construct a specific input to trigger the described bug related to the `aiohttp` cookie jar's `clear()` method. Here's why:\n\n1. **Mismatch Between Bug Description and Code**: The bug description mentions an issue ",
+    "finding_id": "aiohttp_clear_stale",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "grok3",
+    "elapsed_s": 4.7,
+    "usage": {
+      "prompt_tokens": 2459,
+      "completion_tokens": 392,
+      "total_tokens": 2851,
+      "prompt_tokens_details": {
+        "text_tokens": 2459,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 132525000
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however ->  However @ 100.0%"
+    ],
+    "hedge_token_details": [
+      "potentially ->  potentially @ 100.0%"
+    ]
+  },
+  {
+    "token_count": 882,
+    "word_count": 607,
+    "baseline_confidence": 96.5,
+    "admissions": 2,
+    "pivots": 3,
+    "hedges": 2,
+    "total_signal": 7,
+    "q1_score": 1,
+    "decision": "Q2",
+    "admit_avg_conf": 100.0,
+    "pivot_avg_conf": 75.7,
+    "hedge_avg_conf": 90.1,
+    "response_text_preview": " After reviewing the provided code and the bug description, I must clarify that the code snippet provided is from the `requests` library, specifically the `requests.auth` module, which deals with authentication mechanisms like Basic and Digest Authentication. However, the bug description mentions \"a",
+    "finding_id": "aiohttp_morsel",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "grok3",
+    "elapsed_s": 10.6,
+    "usage": {
+      "prompt_tokens": 2473,
+      "completion_tokens": 882,
+      "total_tokens": 3355,
+      "prompt_tokens_details": {
+        "text_tokens": 2473,
+        "audio_tokens": 0,
+        "image_tokens": 0,
+        "cached_tokens": 2
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "num_sources_used": 0,
+      "cost_in_usd_ticks": 206445000
+    },
+    "admit_token_details": [
+      "not directly ->  not @ 100.0%",
+      "not directly ->  not @ 100.0%"
+    ],
+    "pivot_token_details": [
+      "however ->  However @ 100.0%",
+      "however ->  However @ 27.5%",
+      "however -> However @ 99.7%"
+    ],
+    "hedge_token_details": [
+      "hypothetical ->  hypothetical @ 80.2%",
+      "hypothetical ->  Hypot @ 100.0%"
+    ]
+  },
+  {
+    "token_count": 285,
+    "word_count": 176,
+    "baseline_confidence": 81.3,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": "The bug in the `_basic_auth_str()` function is due to the use of the `latin1` encoding, which only supports characters with code points from 0 to 255. If a username or password contains characters outside this range, a `UnicodeEncodeError` will be raised.\n\nTo trigger this bug, you can use a username",
+    "finding_id": "latin1_crash",
+    "finding_type": "REAL",
+    "finding_bug": "I",
+    "model": "gpt4o",
+    "elapsed_s": 4.8,
+    "usage": {
+      "prompt_tokens": 2497,
+      "completion_tokens": 285,
+      "total_tokens": 2782,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 591,
+    "word_count": 334,
+    "baseline_confidence": 83.0,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": "To trigger the bug in the `handle_401()` method, we need to create a scenario where a request is made without a body, and the server responds with a 401 status code, prompting a retry with Digest Authentication. The bug occurs because the code attempts to call `seek()` on `r.request.body` without ch",
+    "finding_id": "body_seek_null",
+    "finding_type": "REAL",
+    "finding_bug": "B",
+    "model": "gpt4o",
+    "elapsed_s": 7.4,
+    "usage": {
+      "prompt_tokens": 2492,
+      "completion_tokens": 591,
+      "total_tokens": 3083,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 320,
+    "word_count": 222,
+    "baseline_confidence": 82.7,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": "The bug in the `_basic_auth_str` function is related to the use of `{username!r}` in the deprecation warning, which exposes the username in plain text if the warning is logged or captured. To trigger this specific bug, you need to pass a non-string username to the `_basic_auth_str` function, which w",
+    "finding_id": "username_leaked",
+    "finding_type": "REAL",
+    "finding_bug": "G",
+    "model": "gpt4o",
+    "elapsed_s": 3.4,
+    "usage": {
+      "prompt_tokens": 2486,
+      "completion_tokens": 320,
+      "total_tokens": 2806,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 497,
+    "word_count": 275,
+    "baseline_confidence": 85.7,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": "To trigger the bug described in the code review finding, you need to create a scenario where the `build_digest_header()` method is called, but the `_thread_local.chal` dictionary does not contain the keys `'realm'` or `'nonce'`. This will cause a `KeyError` when the method tries to access these keys",
+    "finding_id": "keyerror_realm",
+    "finding_type": "REAL",
+    "finding_bug": "D",
+    "model": "gpt4o",
+    "elapsed_s": 5.4,
+    "usage": {
+      "prompt_tokens": 2488,
+      "completion_tokens": 497,
+      "total_tokens": 2985,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 445,
+    "word_count": 233,
+    "baseline_confidence": 84.8,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": "To trigger the bug in the `build_digest_header()` function, we need to provide an unsupported algorithm in the challenge dictionary (`self._thread_local.chal`). The bug occurs when the `build_digest_header()` function returns `None` due to an unrecognized algorithm, and the `__call__` method sets th",
+    "finding_id": "digest_returns_none",
+    "finding_type": "REAL",
+    "finding_bug": "A",
+    "model": "gpt4o",
+    "elapsed_s": 7.1,
+    "usage": {
+      "prompt_tokens": 2478,
+      "completion_tokens": 445,
+      "total_tokens": 2923,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 247,
+    "word_count": 182,
+    "baseline_confidence": 74.2,
+    "admissions": 0,
+    "pivots": 1,
+    "hedges": 0,
+    "total_signal": 1,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 58.4,
+    "hedge_avg_conf": null,
+    "response_text_preview": "The code review finding mentions that calls to `hashlib.md5()` and `hashlib.sha256()` in the `build_digest_header()` method could raise a `ValueError` if the hash algorithm is not available or if the input data is malformed. However, in the context of the Python standard library, `hashlib.md5()` and",
+    "finding_id": "hashlib_exceptions",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "gpt4o",
+    "elapsed_s": 5.3,
+    "usage": {
+      "prompt_tokens": 2477,
+      "completion_tokens": 247,
+      "total_tokens": 2724,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however ->  However @ 58.4%"
+    ],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 603,
+    "word_count": 348,
+    "baseline_confidence": 79.6,
+    "admissions": 0,
+    "pivots": 1,
+    "hedges": 0,
+    "total_signal": 1,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": 79.7,
+    "hedge_avg_conf": null,
+    "response_text_preview": "The bug described in the code review finding pertains to the potential overflow of the `self._thread_local.nonce_count` integer in the `HTTPDigestAuth` class. Specifically, the concern is that after billions of requests, the integer could overflow, causing the `08x` format to produce strings longer ",
+    "finding_id": "nonce_overflow",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "gpt4o",
+    "elapsed_s": 8.1,
+    "usage": {
+      "prompt_tokens": 2479,
+      "completion_tokens": 603,
+      "total_tokens": 3082,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [
+      "however ->  However @ 79.7%"
+    ],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 175,
+    "word_count": 137,
+    "baseline_confidence": 70.2,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": "The code you provided is part of the `requests` library and does not contain any usage of Flask's `jsonify()` function. The code review finding you mentioned about `jsonify()` requiring an active application context is not applicable to this code snippet.\n\nThe `requests.auth` module is responsible f",
+    "finding_id": "flask_jsonify",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "gpt4o",
+    "elapsed_s": 3.2,
+    "usage": {
+      "prompt_tokens": 2479,
+      "completion_tokens": 175,
+      "total_tokens": 2654,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  },
+  {
+    "token_count": 207,
+    "word_count": 166,
+    "baseline_confidence": 71.8,
+    "admissions": 1,
+    "pivots": 0,
+    "hedges": 1,
+    "total_signal": 2,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": 100.0,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": 54.1,
+    "response_text_preview": "The provided code is a part of an authentication module for HTTP requests, and it does not directly interact with `aiohttp` or its cookie jar. The bug mentioned in the code review finding refers to the `aiohttp` library's `cookie_jar.clear()` method, which is not present in the provided code.\n\nTo tr",
+    "finding_id": "aiohttp_clear_stale",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "gpt4o",
+    "elapsed_s": 4.6,
+    "usage": {
+      "prompt_tokens": 2471,
+      "completion_tokens": 207,
+      "total_tokens": 2678,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [
+      "not directly ->  not @ 100.0%"
+    ],
+    "pivot_token_details": [],
+    "hedge_token_details": [
+      "potentially ->  potentially @ 54.1%"
+    ]
+  },
+  {
+    "token_count": 190,
+    "word_count": 155,
+    "baseline_confidence": 66.9,
+    "admissions": 0,
+    "pivots": 0,
+    "hedges": 0,
+    "total_signal": 0,
+    "q1_score": 0,
+    "decision": "KEEP",
+    "admit_avg_conf": null,
+    "pivot_avg_conf": null,
+    "hedge_avg_conf": null,
+    "response_text_preview": "The code provided does not contain any direct handling of cookies or Morsel attributes, which are typically associated with the `http.cookies` module in Python. The code primarily deals with authentication mechanisms like Basic and Digest authentication for HTTP requests.\n\nThe bug mentioned in the c",
+    "finding_id": "aiohttp_morsel",
+    "finding_type": "FALSE",
+    "finding_bug": "",
+    "model": "gpt4o",
+    "elapsed_s": 2.6,
+    "usage": {
+      "prompt_tokens": 2486,
+      "completion_tokens": 190,
+      "total_tokens": 2676,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "admit_token_details": [],
+    "pivot_token_details": [],
+    "hedge_token_details": []
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "file_id": "fastapi_oauth2",
+  "finding_id": 3,
+  "finding_title": "Inconsistent Documentation for `client_secret` in `OAuth2PasswordRequestForm`",
+  "token_count": 450,
+  "baseline_conf": 96.0,
+  "old_gate": {
+    "score": 0,
+    "hedges": 1,
+    "admits": 0,
+    "pivots": 2,
+    "words": 338,
+    "decision": "KEEP"
+  },
+  "new_gate": {
+    "score": 8,
+    "scope": 6,
+    "refusal": 3,
+    "hedges": 1,
+    "admits": 0,
+    "decision": "REJECT"
+  },
+  "elapsed_s": 5.8,
+  "response_preview": "I must clarify that the issue described in the code review finding is not a runtime bug that causes the code to crash or fail during execution. Instead, it is a **documentation error** in the `client_secret` field of the `OAuth2PasswordRequestForm` class. The error lies in the documentation string, "
+}

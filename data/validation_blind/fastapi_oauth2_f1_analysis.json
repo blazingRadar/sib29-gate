@@ -1,0 +1,25 @@
+{
+  "file_id": "fastapi_oauth2",
+  "finding_id": 1,
+  "finding_title": "Insecure Storage of Sensitive Data in `OAuth2PasswordRequestForm`",
+  "token_count": 1316,
+  "baseline_conf": 96.4,
+  "old_gate": {
+    "score": 1,
+    "hedges": 0,
+    "admits": 2,
+    "pivots": 2,
+    "words": 863,
+    "decision": "Q2"
+  },
+  "new_gate": {
+    "score": 11,
+    "scope": 10,
+    "refusal": 3,
+    "hedges": 0,
+    "admits": 2,
+    "decision": "REJECT"
+  },
+  "elapsed_s": 16.5,
+  "response_preview": "I must clarify that the issue described in the code review finding is not a \"bug\" in the traditional sense that causes the code to crash or fail with a specific input. Instead, it is a **security vulnerability** related to the insecure storage of sensitive data (e.g., `password` and `client_secret`)"
+}

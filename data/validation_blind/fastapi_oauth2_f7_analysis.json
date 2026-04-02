@@ -1,0 +1,25 @@
+{
+  "file_id": "fastapi_oauth2",
+  "finding_id": 7,
+  "finding_title": "Insufficient Error Handling in `OAuth2.__call__` for Malformed Authorization Hea",
+  "token_count": 1345,
+  "baseline_conf": 96.0,
+  "old_gate": {
+    "score": 1,
+    "hedges": 3,
+    "admits": 0,
+    "pivots": 6,
+    "words": 910,
+    "decision": "Q2"
+  },
+  "new_gate": {
+    "score": 4,
+    "scope": 4,
+    "refusal": 2,
+    "hedges": 3,
+    "admits": 0,
+    "decision": "REJECT"
+  },
+  "elapsed_s": 15.5,
+  "response_preview": "Let's analyze the issue described in the code review finding for the `OAuth2.__call__` method and attempt to construct a specific input that triggers the bug.\n\n### Analysis of the Issue\nThe code review finding points out that the `OAuth2.__call__` method does not validate or parse the `Authorization"
+}

@@ -1,0 +1,40 @@
+{
+  "token_count": 247,
+  "word_count": 182,
+  "baseline_confidence": 74.2,
+  "admissions": 0,
+  "pivots": 1,
+  "hedges": 0,
+  "total_signal": 1,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": 58.4,
+  "hedge_avg_conf": null,
+  "response_text_preview": "The code review finding mentions that calls to `hashlib.md5()` and `hashlib.sha256()` in the `build_digest_header()` method could raise a `ValueError` if the hash algorithm is not available or if the input data is malformed. However, in the context of the Python standard library, `hashlib.md5()` and",
+  "finding_id": "hashlib_exceptions",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "gpt4o",
+  "elapsed_s": 5.3,
+  "usage": {
+    "prompt_tokens": 2477,
+    "completion_tokens": 247,
+    "total_tokens": 2724,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [
+    "however ->  However @ 58.4%"
+  ],
+  "hedge_token_details": []
+}

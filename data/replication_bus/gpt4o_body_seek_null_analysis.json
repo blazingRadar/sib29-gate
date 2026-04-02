@@ -1,0 +1,38 @@
+{
+  "token_count": 591,
+  "word_count": 334,
+  "baseline_confidence": 83.0,
+  "admissions": 0,
+  "pivots": 0,
+  "hedges": 0,
+  "total_signal": 0,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": null,
+  "hedge_avg_conf": null,
+  "response_text_preview": "To trigger the bug in the `handle_401()` method, we need to create a scenario where a request is made without a body, and the server responds with a 401 status code, prompting a retry with Digest Authentication. The bug occurs because the code attempts to call `seek()` on `r.request.body` without ch",
+  "finding_id": "body_seek_null",
+  "finding_type": "REAL",
+  "finding_bug": "B",
+  "model": "gpt4o",
+  "elapsed_s": 7.4,
+  "usage": {
+    "prompt_tokens": 2492,
+    "completion_tokens": 591,
+    "total_tokens": 3083,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [],
+  "hedge_token_details": []
+}

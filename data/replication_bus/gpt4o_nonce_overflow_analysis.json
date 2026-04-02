@@ -1,0 +1,40 @@
+{
+  "token_count": 603,
+  "word_count": 348,
+  "baseline_confidence": 79.6,
+  "admissions": 0,
+  "pivots": 1,
+  "hedges": 0,
+  "total_signal": 1,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": 79.7,
+  "hedge_avg_conf": null,
+  "response_text_preview": "The bug described in the code review finding pertains to the potential overflow of the `self._thread_local.nonce_count` integer in the `HTTPDigestAuth` class. Specifically, the concern is that after billions of requests, the integer could overflow, causing the `08x` format to produce strings longer ",
+  "finding_id": "nonce_overflow",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "gpt4o",
+  "elapsed_s": 8.1,
+  "usage": {
+    "prompt_tokens": 2479,
+    "completion_tokens": 603,
+    "total_tokens": 3082,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [
+    "however ->  However @ 79.7%"
+  ],
+  "hedge_token_details": []
+}

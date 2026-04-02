@@ -1,0 +1,50 @@
+{
+  "token_count": 1223,
+  "word_count": 785,
+  "baseline_confidence": 96.9,
+  "admissions": 0,
+  "pivots": 3,
+  "hedges": 3,
+  "total_signal": 6,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": 100.0,
+  "hedge_avg_conf": 79.0,
+  "response_text_preview": " Let's analyze the code review finding regarding the potential `ValueError` from `hashlib.md5()` and `hashlib.sha256()` calls in the `build_digest_header()` method of the `HTTPDigestAuth` class.\n\n### Code Review Finding\nThe finding states that calls to `hashlib.md5()` and `hashlib.sha256()` (and oth",
+  "finding_id": "hashlib_exceptions",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "grok3",
+  "elapsed_s": 16.3,
+  "usage": {
+    "prompt_tokens": 2465,
+    "completion_tokens": 1223,
+    "total_tokens": 3688,
+    "prompt_tokens_details": {
+      "text_tokens": 2465,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 257355000
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [
+    "however ->  However @ 99.9%",
+    "however ->  However @ 100.0%",
+    "however ->  However @ 100.0%"
+  ],
+  "hedge_token_details": [
+    "depends on ->  depends @ 100.0%",
+    "depends on ->  depends @ 100.0%",
+    "depends on ->  depends @ 37.1%"
+  ]
+}

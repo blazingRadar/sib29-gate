@@ -1,0 +1,25 @@
+{
+  "file_id": "fastapi_oauth2",
+  "finding_id": 6,
+  "finding_title": "Lack of Rate Limiting or Brute Force Protection in OAuth2 Flows",
+  "token_count": 781,
+  "baseline_conf": 96.1,
+  "old_gate": {
+    "score": 1,
+    "hedges": 0,
+    "admits": 1,
+    "pivots": 4,
+    "words": 614,
+    "decision": "Q2"
+  },
+  "new_gate": {
+    "score": 9,
+    "scope": 5,
+    "refusal": 3,
+    "hedges": 0,
+    "admits": 1,
+    "decision": "REJECT"
+  },
+  "elapsed_s": 12.2,
+  "response_preview": "I cannot construct a specific input that triggers the bug described in the code review finding because the issue is not about a specific input causing a crash or failure in the traditional sense (e.g., an exception or incorrect output). Instead, the bug is a design flaw related to the absence of rat"
+}

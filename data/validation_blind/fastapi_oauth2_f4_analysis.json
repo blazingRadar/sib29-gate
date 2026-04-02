@@ -1,0 +1,25 @@
+{
+  "file_id": "fastapi_oauth2",
+  "finding_id": 4,
+  "finding_title": "No Enforcement of HTTP Basic Auth for `client_id` and `client_secret`",
+  "token_count": 1293,
+  "baseline_conf": 96.9,
+  "old_gate": {
+    "score": 2,
+    "hedges": 0,
+    "admits": 3,
+    "pivots": 5,
+    "words": 809,
+    "decision": "Q2"
+  },
+  "new_gate": {
+    "score": 6,
+    "scope": 4,
+    "refusal": 3,
+    "hedges": 0,
+    "admits": 3,
+    "decision": "REJECT"
+  },
+  "elapsed_s": 20.6,
+  "response_preview": "After reviewing the provided code and the specific issue raised in the code review finding, I must clarify that the issue described is not a \"bug\" in the traditional sense that causes the code to crash or fail with an error. Instead, it is a security concern or a deviation from best practices as rec"
+}

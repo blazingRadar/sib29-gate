@@ -1,0 +1,42 @@
+{
+  "token_count": 207,
+  "word_count": 166,
+  "baseline_confidence": 71.8,
+  "admissions": 1,
+  "pivots": 0,
+  "hedges": 1,
+  "total_signal": 2,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": 100.0,
+  "pivot_avg_conf": null,
+  "hedge_avg_conf": 54.1,
+  "response_text_preview": "The provided code is a part of an authentication module for HTTP requests, and it does not directly interact with `aiohttp` or its cookie jar. The bug mentioned in the code review finding refers to the `aiohttp` library's `cookie_jar.clear()` method, which is not present in the provided code.\n\nTo tr",
+  "finding_id": "aiohttp_clear_stale",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "gpt4o",
+  "elapsed_s": 4.6,
+  "usage": {
+    "prompt_tokens": 2471,
+    "completion_tokens": 207,
+    "total_tokens": 2678,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "admit_token_details": [
+    "not directly ->  not @ 100.0%"
+  ],
+  "pivot_token_details": [],
+  "hedge_token_details": [
+    "potentially ->  potentially @ 54.1%"
+  ]
+}

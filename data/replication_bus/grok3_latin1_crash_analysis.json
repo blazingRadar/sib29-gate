@@ -1,0 +1,44 @@
+{
+  "token_count": 683,
+  "word_count": 419,
+  "baseline_confidence": 97.9,
+  "admissions": 1,
+  "pivots": 0,
+  "hedges": 0,
+  "total_signal": 1,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": 99.7,
+  "pivot_avg_conf": null,
+  "hedge_avg_conf": null,
+  "response_text_preview": " I can construct a specific input that triggers the bug described in the code review finding. The issue occurs in the `_basic_auth_str()` function when a username or password contains characters outside the Latin-1 range (code points > 255), causing a `UnicodeEncodeError` during the `encode(\"latin1\"",
+  "finding_id": "latin1_crash",
+  "finding_type": "REAL",
+  "finding_bug": "I",
+  "model": "grok3",
+  "elapsed_s": 9.8,
+  "usage": {
+    "prompt_tokens": 2484,
+    "completion_tokens": 683,
+    "total_tokens": 3167,
+    "prompt_tokens_details": {
+      "text_tokens": 2484,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 176925000
+  },
+  "admit_token_details": [
+    "no issue ->  no @ 99.7%"
+  ],
+  "pivot_token_details": [],
+  "hedge_token_details": []
+}

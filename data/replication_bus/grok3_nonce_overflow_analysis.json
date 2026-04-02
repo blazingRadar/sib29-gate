@@ -1,0 +1,49 @@
+{
+  "token_count": 1225,
+  "word_count": 757,
+  "baseline_confidence": 95.9,
+  "admissions": 0,
+  "pivots": 3,
+  "hedges": 2,
+  "total_signal": 5,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": 86.9,
+  "hedge_avg_conf": 100.0,
+  "response_text_preview": " Let's analyze the bug described in the code review finding and attempt to construct a specific input or scenario that triggers the issue.\n\n### Bug Description\nThe finding states that `self._thread_local.nonce_count` is incremented without bounds in the `HTTPDigestAuth` class. After billions of requ",
+  "finding_id": "nonce_overflow",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "grok3",
+  "elapsed_s": 14.7,
+  "usage": {
+    "prompt_tokens": 2466,
+    "completion_tokens": 1225,
+    "total_tokens": 3691,
+    "prompt_tokens_details": {
+      "text_tokens": 2466,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 257685000
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [
+    "however -> However @ 60.8%",
+    "however ->  However @ 100.0%",
+    "instead ->  Instead @ 100.0%"
+  ],
+  "hedge_token_details": [
+    "theoretically ->  theoretically @ 100.0%",
+    "could cause ->  could @ 100.0%"
+  ]
+}

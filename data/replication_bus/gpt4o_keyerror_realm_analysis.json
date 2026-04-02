@@ -1,0 +1,38 @@
+{
+  "token_count": 497,
+  "word_count": 275,
+  "baseline_confidence": 85.7,
+  "admissions": 0,
+  "pivots": 0,
+  "hedges": 0,
+  "total_signal": 0,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": null,
+  "hedge_avg_conf": null,
+  "response_text_preview": "To trigger the bug described in the code review finding, you need to create a scenario where the `build_digest_header()` method is called, but the `_thread_local.chal` dictionary does not contain the keys `'realm'` or `'nonce'`. This will cause a `KeyError` when the method tries to access these keys",
+  "finding_id": "keyerror_realm",
+  "finding_type": "REAL",
+  "finding_bug": "D",
+  "model": "gpt4o",
+  "elapsed_s": 5.4,
+  "usage": {
+    "prompt_tokens": 2488,
+    "completion_tokens": 497,
+    "total_tokens": 2985,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [],
+  "hedge_token_details": []
+}

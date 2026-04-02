@@ -1,0 +1,52 @@
+{
+  "token_count": 882,
+  "word_count": 607,
+  "baseline_confidence": 96.5,
+  "admissions": 2,
+  "pivots": 3,
+  "hedges": 2,
+  "total_signal": 7,
+  "q1_score": 1,
+  "decision": "Q2",
+  "admit_avg_conf": 100.0,
+  "pivot_avg_conf": 75.7,
+  "hedge_avg_conf": 90.1,
+  "response_text_preview": " After reviewing the provided code and the bug description, I must clarify that the code snippet provided is from the `requests` library, specifically the `requests.auth` module, which deals with authentication mechanisms like Basic and Digest Authentication. However, the bug description mentions \"a",
+  "finding_id": "aiohttp_morsel",
+  "finding_type": "FALSE",
+  "finding_bug": "",
+  "model": "grok3",
+  "elapsed_s": 10.6,
+  "usage": {
+    "prompt_tokens": 2473,
+    "completion_tokens": 882,
+    "total_tokens": 3355,
+    "prompt_tokens_details": {
+      "text_tokens": 2473,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 206445000
+  },
+  "admit_token_details": [
+    "not directly ->  not @ 100.0%",
+    "not directly ->  not @ 100.0%"
+  ],
+  "pivot_token_details": [
+    "however ->  However @ 100.0%",
+    "however ->  However @ 27.5%",
+    "however -> However @ 99.7%"
+  ],
+  "hedge_token_details": [
+    "hypothetical ->  hypothetical @ 80.2%",
+    "hypothetical ->  Hypot @ 100.0%"
+  ]
+}

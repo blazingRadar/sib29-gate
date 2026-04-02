@@ -1,0 +1,45 @@
+{
+  "token_count": 1485,
+  "word_count": 864,
+  "baseline_confidence": 96.5,
+  "admissions": 0,
+  "pivots": 2,
+  "hedges": 0,
+  "total_signal": 2,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": 96.6,
+  "hedge_avg_conf": null,
+  "response_text_preview": " Let's analyze the code and construct a specific input to trigger the bug described in the code review finding. The issue is in the `handle_401()` method of the `HTTPDigestAuth` class, where `r.request.body.seek(self._thread_local.pos)` is called without checking if `r.request.body` is `None`. This ",
+  "finding_id": "body_seek_null",
+  "finding_type": "REAL",
+  "finding_bug": "B",
+  "model": "grok3",
+  "elapsed_s": 18.1,
+  "usage": {
+    "prompt_tokens": 2480,
+    "completion_tokens": 1485,
+    "total_tokens": 3965,
+    "prompt_tokens_details": {
+      "text_tokens": 2480,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 297105000
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [
+    "however ->  However @ 93.2%",
+    "however ->  However @ 99.9%"
+  ],
+  "hedge_token_details": []
+}

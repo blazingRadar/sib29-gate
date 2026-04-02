@@ -1,0 +1,25 @@
+{
+  "file_id": "fastapi_oauth2",
+  "finding_id": 5,
+  "finding_title": "No Validation of `grant_type` in `OAuth2PasswordRequestForm` When Optional",
+  "token_count": 1026,
+  "baseline_conf": 96.1,
+  "old_gate": {
+    "score": 0,
+    "hedges": 1,
+    "admits": 1,
+    "pivots": 3,
+    "words": 700,
+    "decision": "KEEP"
+  },
+  "new_gate": {
+    "score": 9,
+    "scope": 9,
+    "refusal": 4,
+    "hedges": 1,
+    "admits": 1,
+    "decision": "REJECT"
+  },
+  "elapsed_s": 12.3,
+  "response_preview": "After analyzing the provided code and the code review finding, I must state that I cannot construct a specific input that triggers the bug as described in the review. Here's why:\n\n### Analysis of the Issue\nThe code review finding suggests that in the `OAuth2PasswordRequestForm` class, the `grant_typ"
+}

@@ -1,0 +1,38 @@
+{
+  "token_count": 285,
+  "word_count": 176,
+  "baseline_confidence": 81.3,
+  "admissions": 0,
+  "pivots": 0,
+  "hedges": 0,
+  "total_signal": 0,
+  "q1_score": 0,
+  "decision": "KEEP",
+  "admit_avg_conf": null,
+  "pivot_avg_conf": null,
+  "hedge_avg_conf": null,
+  "response_text_preview": "The bug in the `_basic_auth_str()` function is due to the use of the `latin1` encoding, which only supports characters with code points from 0 to 255. If a username or password contains characters outside this range, a `UnicodeEncodeError` will be raised.\n\nTo trigger this bug, you can use a username",
+  "finding_id": "latin1_crash",
+  "finding_type": "REAL",
+  "finding_bug": "I",
+  "model": "gpt4o",
+  "elapsed_s": 4.8,
+  "usage": {
+    "prompt_tokens": 2497,
+    "completion_tokens": 285,
+    "total_tokens": 2782,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "admit_token_details": [],
+  "pivot_token_details": [],
+  "hedge_token_details": []
+}

@@ -221,7 +221,7 @@ Where the uncertainty appears is diagnostic. Uncertainty during the claim is dec
 
 MASK tells you whether the model lied by comparing two outputs. BUS tells you whether the model confabulated by measuring one challenge. The entropy signature on the original response tells you which failure mode you are dealing with before either test is applied.
 
-Nobody has published this distinction at the token level. The two failure modes require different detection mechanisms and different interventions. Treating them as equivalent means applying the wrong fix to the wrong problem.
+I am not aware of any published work on this distinction at the token level. The two failure modes require different detection mechanisms and different interventions. Treating them as equivalent means applying the wrong fix to the wrong problem.
 
 This is preliminary. The direction is clear. The proof is not yet sufficient. The next experiment builds the classifier.
 
